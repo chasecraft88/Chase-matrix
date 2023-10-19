@@ -1,1 +1,111 @@
-1
+/* CSS for your website's styles */
+body {
+    background-color: #0a0a0a;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.hero {
+    text-align: center;
+}
+
+.section {
+    /* Define styles for other sections as needed */
+}
+
+.interactive-section {
+    text-align: center;
+}
+
+.element-to-follow-mouse {
+    width: 100px;
+    height: 100px;
+    background-color: #ff9900;
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.three-d-section {
+    text-align: center;
+}
+
+.three-d-element {
+    width: 100px;
+    height: 100px;
+    background-color: #00ff00;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    animation: spin 5s linear infinite;
+}
+
+.loading-section {
+    text-align: center;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ff9900;
+    border-top: 5px solid transparent;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+.draggable-area {
+    text-align: center;
+}
+
+.draggable-element {
+    width: 100px;
+    height: 100px;
+    background-color: #0000ff;
+    position: absolute;
+}
+
+.text-animation-section {
+    text-align: center;
+}
+
+.animated-text {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #ffffff;
+    font-size: 24px;
+    animation: typing 2s steps(24) infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
